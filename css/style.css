@@ -1,27 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  display: block;
-  margin: 5%;
   color: #ffffff;
   background-color: #2d004d;
-  text-align: center;
 }
 
 #quote-box {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding: 50px 0;
   font-family: Big Caslon,Book Antiqua,Palatino Linotype,Georgia,serif;
-  font-size: 24px;
+  font-size: 26px;
   font-style: italic;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 50px;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
-a {
-  /*bottom alignment with quote button*/
+.container {
+  width: 60%;
+}
+
+.buttons {
+  margin: 0 auto;
+  width: 70%;
+}
+
+button {
+  font-weight: bold;
+}
+
+#tweet-button {
+  float: left;
+}
+
+#quote-button {
+  float: right;
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
+  padding: 40px 0 10px 0;
 }
