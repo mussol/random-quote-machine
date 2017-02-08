@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="twitter:title" content="Random quotes by Mussol">
   <title>Random Quotes</title>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,23 +15,29 @@
   </header>
   
   <main>
-    <div class="row" id="quote-box">
-      Quote and author go here
-    </div>	
-    <div class="row">
-      <div class="col-xs-6">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-text=quote data-hashtags="quote" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-      <div class="col-xs-6">
-        <button id="get-quote" class="btn btn-default">
-          New quote
+    <div class="container">
+      <div id="quote-box">
+        Each day provides its own gifts.<br>Marcus Aurelius
+      </div>	
+      <div class="buttons">
+        <a 
+           href="https://twitter.com/intent/tweet" 
+           class="twitter-share-button" 
+           data-size='large' 
+           data-text='Random quotes by Mussol' 
+           data-url='http://codepen.io/mussol/full/zNzGXJ/' 
+           data-hashtags='quote'>
+          Tweet</a>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <button class="btn btn-default" id="quote-button">
+            New quote
         </button>
       </div>
     </div>
   </main>
   
   <footer>
-    <p>© 2017 Mussol</p>
+    <p>&copy; 2017 Mussol</p>
   </footer>
   
 </body>
