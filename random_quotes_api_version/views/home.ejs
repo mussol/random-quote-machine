@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Random Quotes by Mussol</title>
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:500">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+  <!--[if lt IE 7]>
+  <style media="screen" type="text/css">
+  #container {
+    height:100%;
+  }
+  </style>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="container">
+    <div id="header">
+      <h1>Random Quote Generator</h1>
+    </div>
+
+    <div id="body">
+      <div id="quoteBox">
+        <h2>"<%= data.quoteText %>"</h2>
+        <h3><%= data.quoteAuthor %></h3>
+      </div>
+      
+      <div id="links">
+        <a id="newQuote" href="/">New quote</a>
+        <!--Tweet button needs fixing!-->
+        <a id="tweet" href="https://twitter.com/intent/tweet" data-text="" via="mu55ol" data-size="large">Tweet <i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </div>
+    </div><!--#body-->
+    
+    <div id="footer">
+      <p>&copy; 2017 Mussol</p>
+    </div>
+  </div><!--#container-->
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+html {
+	background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	height: 100%;
+	max-width: 900px;
+	width: 80%;
+	font-family: Montserrat, sans-serif;
+	text-align: center;
+}
+
+#container {
+	min-height: 100%;
+	position: relative;
+}
+
+#header {
+	padding: 10px;
+	font-size: 1.5em;
+}
+
+#body {
+	padding: 10px;
+	padding-bottom: 100px; /*Height of the footer or slightly larger*/
+}
+
+#quoteBox {
+	font-family: 'Caveat', cursive;
+	letter-spacing: 1px;
+	padding: 20px 30px;
+	border: 12px dashed #1b1a19;
+	border-radius: 5px;
+	background-color: #009b7e;
+	color: #fff;
+}
+
+h2, h3 {
+	font-weight: normal;
+	font-size: 2.5em;
+}
+
+#links {
+	padding: 20px 60px;
+}
+
+#newQuote {
+    float: left;
+}
+
+#tweet {
+	float: right;
+}
+
+a {
+	letter-spacing: 0.5px;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+
+a:visited,
+a:active {
+	color: inherit;
+	}
+
+#footer {
+	position: absolute; /*Requires relative position in parent element*/
+	bottom: 0;
+	width: 100%;
+	height: 40px; /*Height of the footer*/
+	line-height: 40px; /*text centered vertically*/
+	font-size: 0.9em;
+	color: #1A352F;
+}
