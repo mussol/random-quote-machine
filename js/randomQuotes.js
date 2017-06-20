@@ -51,7 +51,3 @@ newQuoteButton.addEventListener("click", function() {
 	authorDisplay.textContent = newQuote.author;
 });
 
-
-// <a href="https://twitter.com/intent/tweet?url=http://thoughtsoncoding.com/quote/52624cc7cdc3fd11fee77740&amp;text=Programs must be written for people to read, and only incidentally for machines to ...&amp;via=http://thoughtsoncoding.com/author/abelson--sussman">t</a>
-
-
