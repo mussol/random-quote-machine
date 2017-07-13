@@ -1,4 +1,4 @@
-
+//quotes array
 var quotes = [
 	{
 		quote: "“Talk is cheap. Show me the code.“",
@@ -37,17 +37,40 @@ var quotes = [
 	}
 ];
 
+//select html elements
+var newQuoteButton = document.querySelector("#newQuote");
+var tweetButton = document.querySelector("#tweet>a");
+var quoteDisplay = document.querySelector("#quote");
+var authorDisplay = document.querySelector("#author");
+
+//generate a random quote
 function randomQuote() {
 	return quotes[Math.floor(Math.random() * quotes.length)];
 };
 
-var newQuoteButton = document.querySelector("#newQuote");
-var quoteDisplay = document.querySelector("#quote");
-var authorDisplay = document.querySelector("#author");
+//shorten a string to less than maxLen characters without truncating words + adding '...'
+function shorten(str, maxLen, separator = ' ') {
+  if (str.length <= maxLen) return str;
+  return str.substr(0, str.lastIndexOf(separator, maxLen))+'...”';
+}
 
-newQuoteButton.addEventListener("click", function() {
+//reinitialises display quote/author & populates tweet accordingly
+function init() {
+	//display a random quote/author
 	var newQuote = randomQuote();
 	quoteDisplay.textContent = newQuote.quote;
 	authorDisplay.textContent = newQuote.author;
+	//140 max chars allowed in twitter, less 1 space between quote and author, less additional '..."' if quote is shortened
+	var maxLen = 140 - '..." '.length - authorDisplay.textContent.length;
+	var shortQuoteText = shorten(quoteDisplay.textContent, maxLen);
+	//build and update the href attribute of the tweet button
+	var url = `https://twitter.com/intent/tweet?text=${shortQuoteText}%20${authorDisplay.textContent}`;
+	tweetButton.setAttribute('href', url);
+}
+
+//when newQuoteButton clicked:
+newQuoteButton.addEventListener("click", function() {
+	init();
 });
 
+init();
