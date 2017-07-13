@@ -26,21 +26,21 @@
 
     <div id="body">
       <div id="quoteBox">
-        <h2>"<%= data.quoteText %>"</h2>
-        <h3><%= data.quoteAuthor %></h3>
+        <h2>"<%= data.quoteText.trim() %>"</h2>
+        <h3><%= data.quoteAuthor.trim() %></h3>
       </div>
       
       <div id="links">
         <a id="newQuote" href="/">New quote</a>
-        <!--Tweet button needs fixing!-->
-        <a id="tweet" href="https://twitter.com/intent/tweet" data-text="" via="mu55ol" data-size="large">Tweet <i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a id="tweet" href='https://twitter.com/intent/tweet' data-size="large" target="_blank">Tweet <i class="fa fa-twitter" aria-hidden="true"></i></a>
       </div>
-    </div><!--#body-->
+    </div><!--#body(id)-->
     
     <div id="footer">
       <p>&copy; 2017 Mussol</p>
     </div>
-  </div><!--#container-->
+  </div><!--#container(id)-->
 
+<script type="text/javascript" src="/scripts/tweet.js"></script>
 </body>
 </html>
