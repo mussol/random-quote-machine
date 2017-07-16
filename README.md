@@ -2,8 +2,7 @@ FreeCodeCamp Intermediate Front End Development Project [Build a Random Quote Ma
 - [x] User Story: I can click a button to show me a new random quote.
 - [x] User Story: I can press a button to tweet out a quote.
 
-First version created at CodePen.io: http://codepen.io/mussol/pen/zNzGXJ
-
-Two versions:
+Three versions:
 - API: Node.js app using Express, HTML, CSS, JS
-- Array: Front-end app in HTML, CSS, JS
+- Array: Front-end app in HTML, CSS, JS [live app](http://random-quotes-array-mussol.surge.sh/)
+- First draft version created at CodePen.io [see pen](http://codepen.io/mussol/pen/zNzGXJ)
